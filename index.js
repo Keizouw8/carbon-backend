@@ -49,9 +49,9 @@ io.on("connection", function (socket) {
 		console.log("Savings", mWsSavings);
 
 		if ((await workingSockets()).length) return;
-		if(!queue.first()[3]) io.to(queue.first()[0]).emit("result", file, t * (mW - queue.first()[2]));
+		if(!queue.first()[3]) io.to(queue.first()[0]).emit("result", file, "result.tar.gz", t * (mW - queue.first()[2]));
 		else{
-
+			io.to(queue.first()[0]).emit("result", file, "model.pth", t * (mW - queue.first()[2]));
 		}
 
 		queue.shift();
