@@ -1,0 +1,64 @@
+:root{
+	--g1: rgb(0, 75, 50);
+	--g1: rgb(0, 104, 74);
+	--g2: rgb(1, 236, 100);
+	--white: rgb(235, 235, 235);
+	--background: rgb(1, 30, 43);
+	--sidebar: rgb(17, 39, 51);
+}
+
+@font-face{
+  src: url(./Inter/Inter-VariableFont_opsz\,wght.ttf);
+  font-family: Inter;
+}
+
+@font-face{
+  src: url(./Inter/Inter-Italic-VariableFont_opsz\,wght.ttf);
+  font-family: Inter Italic;
+}
+
+@font-face{
+  src: url(./JBM/JetBrainsMono-VariableFont_wght.ttf);
+  font-family: JBM;
+}
+
+.monospace{
+	font-family: JBM;
+}
+
+*{
+  margin: 0;
+  font-family: Inter;
+  color: var(--white);
+}
+
+body{
+	background: var(--background);
+}
+
+h1{
+	font-weight: 700;
+}
+
+.title{
+	padding: 20px;
+}
+
+div.centered{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+}
+
+.leaf{
+	height: 500px;
+}
+
+span{
+	color: var(--g1);
+	font-size: 50px;
+	font-weight: 600;
+}
